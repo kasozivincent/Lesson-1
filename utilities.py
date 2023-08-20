@@ -17,3 +17,6 @@ def is_odd(number: int) -> bool:
 
 def get_last_digit(number: int) -> int:
     return number % 10
+
+def max(a, b):
+    return a if a >= b else b
