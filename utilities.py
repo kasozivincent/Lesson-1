@@ -1,3 +1,6 @@
+from typing import List
+
+
 def is_even(number: int) -> bool:
     if (number % 2 == 0):
         return True
@@ -20,13 +23,13 @@ def get_last_digit(number: int) -> int:
     return number % 10
 
 
-def max(a, b):
+def max(a: int, b: int):
     return a if a >= b else b
 
 
-def number_of_rows(matrix) -> int:
+def number_of_rows(matrix: List[List[int]]) -> int:
     return len(matrix)
 
 
-def columns(matrix):
+def columns(matrix: List[List[int]]):
     return len(matrix[0])
